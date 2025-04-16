@@ -1,0 +1,52 @@
+.hoverDiv{
+    position: relative;
+    top: 100%;
+  }
+  
+  .imgWidth:hover .hoverDiv{
+    top: 70%;
+  }
+
+  .projectH{
+    line-height: 22px;
+  }
+
+
+  .aboutBg{
+    background-image: url(https://images.pexels.com/photos/6758776/pexels-photo-6758776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+  }
+
+
+  .readLine{
+    transition-property: all;
+    transition-duration: 0.3s;
+  }
+  .read{
+    transition-property: all;
+    transition-duration: 0.3s;
+  }
+
+  .item:hover .readLine{
+    transform: translateX(96px);
+  }
+
+  .item:hover .read{
+    transform: translateX(-32px);
+  }
+  .readBtn:hover .readLine{
+    transform: translateX(96px);
+  }
+
+  .readBtn:hover .read{
+    transform: translateX(-32px);
+  }
+
+  .dimBg{
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  /* .hoverEffect:hover {} */
+
+  .aboutH{
+    line-height: 54px;
+  }

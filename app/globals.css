@@ -1,0 +1,278 @@
+@import "tailwindcss";
+
+.background{
+  background-image: url(https://images.pexels.com/photos/6758776/pexels-photo-6758776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100% 100%;
+};
+
+.bg-light{
+  background-color: rgb(14, 14, 14);
+}
+.bg-nav{
+  background-color: rgb(57, 57, 57);
+}
+.hoverLink{
+  color: white;
+}
+.linkHover:hover .hoverLink{
+  color: black;
+}
+.bg-back{
+  background-color: rgb(23, 23, 23);
+}
+
+.animateMe{
+  animation-name: animateMe;
+  animation-duration: 0.5s;
+}
+
+@keyframes animateMe {
+  from{
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
+
+@media (max-width: 1035px) {
+  .lady{
+    margin-top: 20px;
+  }
+  
+}
+
+.articleHead{
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.img{
+  background-image: url(https://images.pexels.com/photos/31115596/pexels-photo-31115596/free-photo-of-modern-residential-building-with-striped-awnings.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100% 100%;
+}
+
+
+.img2{
+  background-image: url(https://images.pexels.com/photos/31354037/pexels-photo-31354037/free-photo-of-historic-architecture-in-salo-italy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100% 100%;
+}
+
+
+.img3{
+  background-image: url(https://images.pexels.com/photos/31250218/pexels-photo-31250218/free-photo-of-elegant-haussmannian-architecture-in-sunlight.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100% 100%;
+}
+.img4{
+  background-image: url(https://images.pexels.com/photos/30170452/pexels-photo-30170452/free-photo-of-colorful-houses-and-boats-at-nyhavn-copenhagen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100% 100%;
+}
+.img5{
+  background-image: url(https://images.pexels.com/photos/31354037/pexels-photo-31354037/free-photo-of-historic-architecture-in-salo-italy.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100% 100%;
+}
+
+.imgWidth{
+  height: 520px;
+  width: 350px;
+}
+
+.slick-slider {
+  justify-content: space-evenly;
+}
+.slick-slide {
+  padding-right:15px;
+  padding-left:15px;
+}
+
+.sliderHead{
+  line-height: 24px;
+}
+
+.textChanging{
+  line-height: 100%;
+}
+.aldrich {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.heroLine, .heroLine2{
+  transition: all;
+  transition-duration: 0.5s;
+}
+.heroBtn:hover .heroLine2{
+  height: 50px;
+  position: absolute;
+}
+
+.bgProjects{
+  background-size: cover;
+}
+
+.heroBtn:hover .heroLine{
+  width: 160%;
+}
+
+.hoverEffect:hover .heroLine{
+  width: 160%;
+}
+
+.logo::after{
+    content: '.';
+    color: #dfa667;
+};
+.text-color{
+  color: #dfa667;
+}
+.bg-color{
+  background-color: #dfa667;
+}
+.dim{
+    background-color: rgba(0, 0, 0, 0.601);
+}
+.line{
+  transform: translateY(9px);
+  visibility: hidden;
+  height: 2px;
+  width: 100%;
+  background-color: #dfa667;
+  justify-self: center;
+}
+.pages:hover .pagesHidden{
+  display: block;
+  animation-name: pages;
+  animation-duration: 0.3s;
+}
+
+.bg-dash{
+  background-color: rgb(16, 16, 16);
+}
+@keyframes pages {
+  from{
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+.link{
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+}
+.link:hover .line{
+  animation-name: grow;
+  animation-duration: 0.5s;
+  visibility: visible;
+}
+
+.radius-full{
+  border-radius: 100%;
+}
+
+.team1{
+  background-image: url(/team-1.jpg.webp);
+  background-size: 100% 100%;
+}
+.team2{
+  background-image: url(/team-2.jpg.webp);
+  background-size: 100% 100%;
+}
+.team3{
+  background-image: url(/team-3.jpg.webp);
+  background-size: 100% 100%;
+}
+
+.loader{
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-color: white;
+}
+
+.hiddenHover:hover .hoverHidden{
+  display: none;
+}
+.hiddenHover:hover .hiddenDetail{
+  display: block;
+  animation-name: hiddenShow;
+  animation-duration: 0.3s;
+}
+.hiddenHover:hover .hidden2{
+  animation-name: hidden2;
+  animation-duration: 0.3s;
+}
+
+@keyframes hiddenShow {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+@keyframes hidden2 {
+  from{
+    opacity: 0;
+    transform: translateY(64px);
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+}
+.bg-visible{
+  background-color: rgba(0, 0, 0, 0.821);
+}
+.paraH{
+  line-height: 32px;
+}
+
+@media (min-width: 946px) {
+  .tab{
+    float: right;
+  }
+  
+}
+
+@media (max-width: 970px) {
+  .policy{
+    left: 40%;
+    float: left;
+    transform: translateY(32px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .serviceCards ul{
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 1280px) {
+  .aboutPara{
+    width: 90vw;
+  }
+  .aboutLeft{
+    width: 90vw;
+    justify-self: center;
+  }
+}
+
+@keyframes grow{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
+}
