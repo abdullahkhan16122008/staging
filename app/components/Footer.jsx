@@ -21,18 +21,18 @@ const Footer = () => {
 
                 <hr className='border-gray-500 w-[80%] justify-self-center' />
 
-                <div className="container px-5 py-24 w-[80%] justify-self-center mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+                <div className="container px-5 py-24 w-[80%] justify-self-center mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap relative max-xl:left-[-18px] flex-col">
                     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                         <Link href={''} className="flex title-font font-medium items-center md:justify-start justify-center text-white">
                             <span className="text-xl logo text-[42px]">Staging</span>
                         </Link>
-                        <p className="mt-9 text-[16px] w-[200px] text-gray-400">
+                        <p className="mt-9 text-[16px] relative w-[200px] max-sm:left-[22px] text-gray-400">
                             7176 Blue Spring Lane
                             Santa Monica, CA 90403
                         </p>
-                        <p className="mt-9 text-[16px] w-[200px] text-gray-400">
-                            Info.colorlib@gmail.com
-                            +84 123 456 789
+                        <p className="mt-9 text-[16px] w-[200px] max-sm:left-[22px] text-gray-400">
+                            abdullahkhan16122008@gmail.com
+                            +92 3046640361
                         </p>
 
                         <div className='mt-9'>
@@ -176,7 +176,7 @@ const Footer = () => {
                                 Abdullah Khan
                             </Link>
                         </div>
-                    <div className='inline policy float-right absolute right-[10%]'><Link href={'/'} className='text-gray-400'>Terms of use</Link> | <Link href={'/'} className='text-gray-400'>Privacy Policy</Link></div>
+                    <div className='inline policy float-right absolute right-[10%] max-sm:text-[12px]'><Link href={'/'} className='text-gray-400'>Terms of use</Link> | <Link href={'/'} className='text-gray-400'>Privacy Policy</Link></div>
                         
                     </div>
                 </div>

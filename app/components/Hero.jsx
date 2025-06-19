@@ -69,11 +69,11 @@ const Hero = () => {
   return (
     <>
 
-          <section className="hero h-[105vh] justify-center text-center">
+          <section className="hero h-[105vh] max-md:h-[80vh] justify-center text-center">
             
             <div className='h-[100%] w-[100%] justify-center text-center content-center align-center'>
 
-            <button className='text-white next heroBtn py-[12px] px-[18px] font-bold text-[20px] rounded relative right-[-40%] z-3 top-[10%]'>
+            <button className='text-white next heroBtn max-sm:scale-[0.80] py-[12px] px-[18px] font-bold text-[20px] rounded relative right-[-40%] max-sm:right-[-50%] z-3 top-[10%]'>
               <div className='relative top-[-10px]'>
 
                 <div className='absolute heroLine border-1 border-gray-60 border-gray-400 w-[35%] justify-self-end top-[0%] right-[-30%]'></div>
@@ -96,7 +96,7 @@ const Hero = () => {
             </button>
 
 
-            <button className='text-white prev heroBtn py-[12px] px-[18px] font-bold text-[20px] rounded relative left-[-40%] z-3 top-[10%]'>
+            <button className='text-white prev heroBtn py-[12px] px-[18px] max-sm:scale-[0.80] font-bold text-[20px] rounded relative left-[-40%] max-sm:left-[-50%] z-3 top-[10%]'>
               <div className='relative top-[-10px]'>
 
                 <div className='absolute heroLine border-1 border-gray-60 border-gray-400 w-[35%] justify-self-end top-[0%] right-[-30%]'></div>
@@ -119,11 +119,11 @@ const Hero = () => {
             </button>
 
             <div className='relative'>
-              <div className="textChanging transition-all duration-500 pb-[45px] text-white text-[72px] max-xl:text-[50px] aldrich w-[50%] max-md:text-[35px] relative justify-self-center"></div>
+              <div className="textChanging transition-all duration-500 pb-[45px] text-white text-[72px] max-xl:text-[50px] aldrich w-[50%] max-sm:w-[60%] max-md:text-[35px] max-sm:text-[22px] max-sm:font-medium relative justify-self-center"></div>
 
               <div className='animateMe heroButton'>
 
-              <button className='text-white heroBtn py-[12px] px-[18px] font-bold text-[20px] rounded'>
+              <button className='text-white max-sm:scale-[0.80] heroBtn py-[12px] px-[18px] font-bold text-[20px] rounded'>
 
                 <div className='relative top-[-10px]'>
 
@@ -152,19 +152,19 @@ const Hero = () => {
 
 
 
-            <aside className="heroFooter relative top-[-15%] justify-self-center w-[80%] flex justify-between">
+            <aside className="heroFooter relative top-[-15%] justify-self-center w-[80%] flex flex-wrap justify-between">
 
 
-              <div className="counter text-white font-bold text-[18px] flex relative">
+              <div className="counter text-white font-bold text-[18px] max-md:w-full flex relative">
                 <div className="number" id='number'></div>
                 <div className="counterLine w-[110px] bg-gray-500 self-center mx-[16px] h-[2px]"><div className="fillColor bg-white transition-all duration-500 h-[2px] w-[50%]"></div></div>
                 <div className="number1" id='number1'></div>
               </div>
 
 
-              <div className="descoverMore"><a href="#" className='text-gray-400'>Discover More</a></div>
+              <div className="descoverMore max-sm:my-5"><a href="#" className='text-gray-400'>Discover More</a></div>
 
-              <div className="socialLinks flex">
+              <div className="socialLinks flex max-sm:my-4">
                 <a href="#" className='font-bold text-2xl text-white translate-y-[-3px] mr-[20px]'>f</a>
                 <a href="#"><img src="/twitter.png" alt="" className='h-[30px] mr-[12px]'/></a>
                 <a href="#"><img src="/instagram.png" alt="" className='h-[30px] mr-[12px]'/></a>

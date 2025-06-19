@@ -18,7 +18,7 @@ const Projects = () => {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "gray", zIndex: "4", padding: "47px", opacity: "1",transform: "translateX(-32px)", marginTop: "-37px", opacity: '0'}}
+        style={{ ...style, display: "block", background: "gray", zIndex: "4", padding: "47px",transform: "translateX(-32px)", marginTop: "-37px", opacity: '0'}}
         onClick={onClick}
       >
         </div>
@@ -30,7 +30,7 @@ const Projects = () => {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "gray", zIndex: "4", padding: "47px", opacity: "1",transform: "translateX(32px)", opacity: "0", position: 'absolute', left: "-1%", top: '46%'}}
+        style={{ ...style, display: "block", background: "gray", zIndex: "4", padding: "47px", opacity: "0",transform: "translateX(20px)", opacity: "0", position: 'absolute', left: "-1%", top: '46%'}}
         onClick={onClick}
       />
     );
@@ -81,16 +81,16 @@ const Projects = () => {
   return (
     <div>
 
-      <section className="projects justify-center content-center text-center px-[24px]">
+      <section className="projects justify-center content-center text-center px-[24px] max-sm:px-[5px]">
         <h2 className="introSubHead text-[#dfa667] font-bold">WHO ARE WE</h2>
         <div className='ardich articleHead py-[12px] text-[42px] articleHead font-medium uppercase'>Latest Projects</div>
         
         <div className="projectSlider w-[100%] px-[16px] h-[50%] overflow-hidden py-[16px]">
 
-          <div className="slider mx-[16px] justify-evenly">
+          <div className="slider mx-[16px] max-sm:mx-[0px] justify-evenly">
 
-            <button className="next text-5xl px-[12px] py-[9px] mr-[77px] absolute bg-white cursor-pointer translate-y-[250px] right-[0%] z-3 font-bold">&rarr;</button>
-            <button className="prev text-5xl px-[12px] py-[9px] ml-[77px] absolute bg-white cursor-pointer translate-y-[250px] left-[0%] z-3 font-bold">&larr;</button>
+            <button className="next text-5xl px-[12px] py-[9px] mr-[77px] max-sm:mr-[40px] absolute bg-white cursor-pointer translate-y-[250px] right-[0%] z-3 font-bold">&rarr;</button>
+            <button className="prev text-5xl px-[12px] py-[9px] ml-[77px] max-sm:ml-[40px] absolute bg-white cursor-pointer translate-y-[250px] left-[0%] z-3 font-bold">&larr;</button>
 
 
           <Slider {...settings}>

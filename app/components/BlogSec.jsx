@@ -45,7 +45,7 @@ const BlogSec = () => {
 
 
 
-                        <div className="item w-[350px] shadow-2xl">
+                        <div className="item w-[350px] max-sm:w-[300px] max-sm:justify-self-center shadow-2xl">
                             <Image src="/latest-1.webp" width={350} height={370} alt="" />
                             <div className='w-[85%] justify-self-center py-[16px]'>
                                 <h1 className='text-gray-400 serif font-bold text-[16px] py-[8px] uppercase'>Architecture</h1>
@@ -63,7 +63,7 @@ const BlogSec = () => {
 
                         <li>
 
-                            <div className="item w-[350px] shadow-2xl">
+                            <div className="item w-[350px] max-sm:w-[300px] shadow-2xl">
                             <Image src="/latest-2.webp" width={350} height={370} alt="" />
                             <div className='w-[85%] justify-self-center py-[16px]'>
                                 <h1 className='text-gray-400 serif font-bold text-[16px] py-[8px] uppercase'>Interior</h1>
@@ -80,7 +80,7 @@ const BlogSec = () => {
                         <li>
 
 
-                            <div className="item w-[350px] shadow-2xl">
+                            <div className="item w-[350px] max-sm:w-[300px] shadow-2xl">
                             <Image src="/latest-3.webp" width={350} height={370} alt="" />
                             <div className='w-[85%] justify-self-center py-[16px]'>
                                 <h1 className='text-gray-400 serif font-bold text-[16px] py-[8px] uppercase'>Planning</h1>
