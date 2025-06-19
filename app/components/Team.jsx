@@ -48,7 +48,7 @@ const Team = () => {
         <div className='flex flex-wrap'>
 
 
-          <div className='team1 hiddenHover h-[470px] mr-[18px] max-sm:w-[100%] w-[370px] overflow-hidden'>
+          <div className='team1 hiddenHover h-[470px] mr-[18px] max-sm:w-[100%] w-[370px] max-sm:h-[370px] overflow-hidden'>
 
             <div className="hiddenDetail w-[100%] h-[100%] bg-visible hidden bg-[#262626]">
 
@@ -63,7 +63,7 @@ const Team = () => {
               <hr className='border-gray-700'/>
               <br />
 
-              <p className='text-gray-300 text-[16px] paraH'>
+              <p className='text-gray-300 text-[16px] paraH max-sm:text-[12px]'>
               Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean ultricies nisl sit amet.
               </p>
 
@@ -82,7 +82,7 @@ const Team = () => {
             <div className='hoverHidden relative top-[80%]'>
 
 
-              <div className='px-[32px] inline-block self-end'>
+              <div className='px-[32px] max-sm:translate-y-[-20px] inline-block self-end'>
                 <h2 className="introSubHead serif translate-y-[24px] text-[20px] text-white font-bold" data-aos='fade-right'>Shahzaib Khan</h2>
                 <h2 className="introSubHead aldrich text-[#dfa667] translate-y-[24px] text-[12px] font-extrabold" data-aos='fade-right'>CEO & Founder</h2>
               </div>
@@ -91,7 +91,7 @@ const Team = () => {
             </div>
           </div>
 
-          <div className='team2 lady hiddenHover h-[470px] mr-[18px] max-sm:w-[100%] max-md:mt-5 w-[370px] overflow-hidden'>
+          <div className='team2 lady hiddenHover h-[470px] mr-[18px] max-sm:w-[100%] max-sm:h-[370px] max-md:mt-5 w-[370px]  overflow-hidden'>
 
             <div className="hiddenDetail w-[100%] h-[100%] bg-visible hidden bg-[#262626]">
 
@@ -106,7 +106,7 @@ const Team = () => {
               <hr className='border-gray-700'/>
               <br />
 
-              <p className='text-gray-300 text-[16px] paraH'>
+              <p className='text-gray-300 text-[16px] paraH max-sm:text-[12px]'>
               Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean ultricies nisl sit amet.
               </p>
 
@@ -125,7 +125,7 @@ const Team = () => {
             <div className='hoverHidden relative top-[80%]'>
 
 
-              <div className='px-[32px] inline-block self-end'>
+              <div className='px-[32px] max-sm:translate-y-[-20px] inline-block self-end'>
                 <h2 className="introSubHead serif translate-y-[24px] text-[20px] text-white font-bold" data-aos='fade-right'>Shahzaib Khan</h2>
                 <h2 className="introSubHead aldrich text-[#dfa667] translate-y-[24px] text-[12px] font-extrabold" data-aos='fade-right'>CEO & Founder</h2>
               </div>
@@ -134,7 +134,7 @@ const Team = () => {
             </div>
           </div>
 
-          <div className='team3 hiddenHover h-[470px] max-xl:mt-[20px] mr-[18px] max-sm:w-[100%] w-[370px] overflow-hidden'>
+          <div className='team3 hiddenHover h-[470px] max-xl:mt-[20px] mr-[18px] max-sm:w-[100%] w-[370px] max-sm:h-[370px] overflow-hidden'>
 
             <div className="hiddenDetail w-[100%] h-[100%] bg-visible hidden bg-[#262626]">
 
@@ -149,7 +149,7 @@ const Team = () => {
               <hr className='border-gray-700'/>
               <br />
 
-              <p className='text-gray-300 text-[16px] paraH'>
+              <p className='text-gray-300 text-[16px] paraH max-sm:text-[12px]'>
               Vestibulum dapibus odio quam, sit amet hendrerit dui ultricies consectetur. Ut viverra porta leo, non tincidunt mauris condimentum eget. Vivamus non turpis elit. Aenean ultricies nisl sit amet.
               </p>
 
@@ -168,7 +168,7 @@ const Team = () => {
             <div className='hoverHidden relative top-[80%]'>
 
 
-              <div className='px-[32px] inline-block self-end'>
+              <div className='px-[32px] inline-block max-sm:translate-y-[-20px] self-end'>
                 <h2 className="introSubHead serif translate-y-[24px] text-[20px] text-white font-bold" data-aos='fade-right'>Shahzaib Khan</h2>
                 <h2 className="introSubHead aldrich text-[#dfa667] translate-y-[24px] text-[12px] font-extrabold" data-aos='fade-right'>CEO & Founder</h2>
               </div>

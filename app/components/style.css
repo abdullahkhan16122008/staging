@@ -50,3 +50,8 @@
   .aboutH{
     line-height: 54px;
   }
+  @media(max-width: 640px){
+    .aboutH{
+      line-height: 40px;
+    }
+    }
