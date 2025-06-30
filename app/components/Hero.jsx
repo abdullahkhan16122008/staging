@@ -69,11 +69,11 @@ const Hero = () => {
   return (
     <>
 
-          <section className="hero h-[105vh] max-md:h-[80vh] justify-center text-center">
+          <section className="hero h-[105vh] max-md:py-3 max-md:h-[70vh] justify-center text-center">
             
             <div className='h-[100%] w-[100%] justify-center text-center content-center align-center'>
 
-            <button className='text-white next heroBtn max-sm:scale-[0.80] py-[12px] px-[18px] font-bold text-[20px] rounded relative right-[-40%] max-sm:right-[-50%] z-3 top-[10%]'>
+            <button className='text-white next heroBtn max-sm:scale-[0.70] py-[12px] px-[18px] font-bold text-[20px] rounded relative right-[-40%] max-sm:right-[-50%] z-3 top-[10%]'>
               <div className='relative top-[-10px]'>
 
                 <div className='absolute heroLine border-1 border-gray-60 border-gray-400 w-[35%] justify-self-end top-[0%] right-[-30%]'></div>
@@ -96,7 +96,7 @@ const Hero = () => {
             </button>
 
 
-            <button className='text-white prev heroBtn py-[12px] px-[18px] max-sm:scale-[0.80] font-bold text-[20px] rounded relative left-[-40%] max-sm:left-[-50%] z-3 top-[10%]'>
+            <button className='text-white prev heroBtn py-[12px] px-[18px] max-sm:scale-[0.70] font-bold text-[20px] rounded relative left-[-40%] max-sm:left-[-50%] z-3 top-[10%]'>
               <div className='relative top-[-10px]'>
 
                 <div className='absolute heroLine border-1 border-gray-60 border-gray-400 w-[35%] justify-self-end top-[0%] right-[-30%]'></div>
@@ -123,7 +123,7 @@ const Hero = () => {
 
               <div className='animateMe heroButton'>
 
-              <button className='text-white max-sm:scale-[0.80] heroBtn py-[12px] px-[18px] font-bold text-[20px] rounded'>
+              <button className='text-white max-sm:scale-[0.80] heroBtn py-[12px] px-[18px] max-sm:scale-[0.80] font-bold text-[20px] rounded'>
 
                 <div className='relative top-[-10px]'>
 

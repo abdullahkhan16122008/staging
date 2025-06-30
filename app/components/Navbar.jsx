@@ -99,7 +99,7 @@ const Navbar = () => {
         </div>
       </button>
 
-      <nav className='fixed navigation just w-[50%] top-[0%] bottom-[0%] transition-all duration-300 z-777 left-[-32%] xl:hidden max-xl:block bg-light' style={{left: navOpen ? '0%' : '-50%',}} ref={navRef}>
+      <nav className='fixed navigation just w-[50%] top-[0%] max-md:w-[50%] overflow-hidden bottom-[0%] transition-all duration-300 z-777 left-[-32%] xl:hidden max-xl:block bg-light' style={{left: navOpen ? '0%' : '-50%',}} ref={navRef}>
       <button className="absolute right-10 top-5 burger group xl:hidden" ref={burgerRef} onClick={() => {
     if (navRef.current) {
       let a = navRef.current.style.left = '-50%';
@@ -114,20 +114,18 @@ const Navbar = () => {
 
       <span className="ml-3 relative text-white top-10 left-6 max-md:text-2xl font-bold text-5xl logo">Staging</span>
 
-      <div className='my-9 px-[16px] py-[42px] increase relative top-10 bg-nav w-[80%] h-[60px] overflow-hidden justify-self-center' ref={sideBarRef} id='sideNavBar'>
+      <div className='my-9 px-[16px] py-[42px] increase overflow-hidden duration-300 relative top-10 bg-nav w-[80%] h-[60px] justify-self-center' ref={sideBarRef} id='sideNavBar'>
         <button className='flex font-bold px-[16px] text-[18px] menu rounded-xl absolute top-3 right-2 text-white items-center bg-back' ref={menuRef} onClick={() => {
     if (sideBarRef.current) {
+    const currentHeight = sideBarRef.current.style.height;
+    if (currentHeight === '520px') {
+      sideBarRef.current.style.height = '60px';
+    } else {
       sideBarRef.current.style.height = '520px';
-      console.log('menu clicked');
     }
-    else if(sideBarRef.current){
-      if (sideBarRef.current) {
-        sideBarRef.current.style.height = '60px';
-        console.log('menu clicked');
-      }
-    }
+  }
   }}>Menu
-        <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all ring-opacity-30 duration-200 shadow-md">
+        <div className="relative flex items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all ring-opacity-30 duration-200 shadow-md">
           <div className="flex flex-col justify-between w-[20px] h-[14px] transform transition-all duration-500 origin-center overflow-hidden group-focus:-rotate-180">
             <div className="bg-white h-[2px] w-6 transform transition-all duration-500 group-focus:rotate-45 -translate-x-1"></div>
             <div className="bg-white h-[2px] w-6 rounded transform transition-all duration-500 "></div>
@@ -139,8 +137,8 @@ const Navbar = () => {
           <li className='hover:bg-gray-300 my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><Link href={'/'} onClick={loader => setLoader(true)} className='hoverLink w-[100%] hover:text-black' >Home</Link></li>
           <li className='hover:bg-gray-300 my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><Link href={'/projects'} onClick={loader => setLoader(true)} className='hoverLink w-[100%] hover:text-black' >Projects</Link></li>
           <li className='hover:bg-gray-300 my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><Link href={'/about'} onClick={loader => setLoader(true)} className='hoverLink w-[100%] hover:text-black' >About</Link></li>
-          <li className='hover:bg-gray-300 pages my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><div className='w-[100%] pages overflow-hidden sideNavBar' style={{height: '210px'}} ><button className='hoverLink pages relative right-12 w-[100%] hover:text-black'>Pages</button>
-            <div className='mt-2 flex flex-col'>
+          <li className='hover:bg-gray-300 pages my-1 px-[12px] py-[4px] relative rounded-sm hover:text-black linkHover'><div className='w-[100%] pages overflow-hidden sideNavBar' style={{height: '210px'}} ><button className='hoverLink pages relative text-left hover:text-black'>Pages</button>
+            <div className='mt-2 relative left-2 flex flex-col'>
             <Link href={'/'} className='hoverLink my-1 px-[12px] py-[4px] rounded-sm'>Project Details</Link>
             <Link href={'/about'} onClick={loader => setLoader(true)} className='hoverLink my-1 px-[12px] py-[4px] rounded-sm'>About</Link>
             <Link href={'/services'} onClick={loader => setLoader(true)} className='hoverLink my-1 px-[12px] py-[4px] rounded-sm'>Services</Link>
