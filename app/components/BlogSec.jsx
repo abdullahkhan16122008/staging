@@ -16,7 +16,7 @@ const BlogSec = () => {
                     </div>
 
 
-                    <button className='text-black heroBtn py-[12px] mt-[24px] px-[18px] font-bold text-[20px] float-right rounded max-xl:mb-[32px] max-xl:float-start'>
+                    <button className='text-black max-sm:scale-[0.80] heroBtn py-[12px] mt-[24px] max-sm:mt-[0px] px-[18px] font-bold text-[20px] float-right rounded max-xl:mb-[32px] max-xl:float-start'>
 
                         <div className='relative top-[-10px]'>
 
@@ -37,19 +37,19 @@ const BlogSec = () => {
 
                     </button>
 
-                    <section className="blogsItems w-[80vw] py-[64px]">
-                        <ul className='flex flex-wrap justify-self-center gap-[64px]'>
+                    <section className="blogsItems max-md:justify-items-left max-md:justify-left w-[80vw] max-sm:w-[95%] py-[64px]">
+                        <ul className='flex flex-wrap justify-self-center max-xl:mt-12 max-md:justify-items-left justify-left gap-[64px]'>
 
 
                         <li>
 
 
 
-                        <div className="item w-[350px] max-sm:w-[300px] max-sm:justify-self-center shadow-2xl">
+                        <div className="item w-[350px] max-sm:w-[290px] max-sm:justify-self-center shadow-2xl">
                             <Image src="/latest-1.webp" width={350} height={370} alt="" />
                             <div className='w-[85%] justify-self-center py-[16px]'>
-                                <h1 className='text-gray-400 serif font-bold text-[16px] py-[8px] uppercase'>Architecture</h1>
-                                <h3 className='serif text-2xl font-bold text-gray-900 pb-[8px]'>Target and Amazon Shopping List for Home Stagers</h3>
+                                <h1 className='text-gray-400 serif font-bold text-[16px] max-sm:text-[12px] py-[8px] uppercase'>Architecture</h1>
+                                <h3 className='serif text-2xl max-sm:text-[18px] font-bold text-gray-900 pb-[8px]'>Target and Amazon Shopping List for Home Stagers</h3>
                                 <div className='flex items-center readBtn'>
                                     <div className='w-[32px] h-[1px] bg-[#dfa667] mr-[8px] readLine'></div>
                                     <button className='font-bold text-gray-900 read cursor-pointer'>Read more</button>
@@ -63,11 +63,11 @@ const BlogSec = () => {
 
                         <li>
 
-                            <div className="item w-[350px] max-sm:w-[300px] shadow-2xl">
+                            <div className="item w-[350px] max-sm:w-[290px] shadow-2xl">
                             <Image src="/latest-2.webp" width={350} height={370} alt="" />
                             <div className='w-[85%] justify-self-center py-[16px]'>
-                                <h1 className='text-gray-400 serif font-bold text-[16px] py-[8px] uppercase'>Interior</h1>
-                                <h3 className='serif text-2xl font-bold text-gray-900 pb-[8px]'>6 Ideas for Team Building and Employee Appreciation for Home Stagers</h3>
+                                <h1 className='text-gray-400 serif font-bold text-[16px] max-sm:text-[12px] py-[8px] uppercase'>Interior</h1>
+                                <h3 className='serif text-2xl font-bold text-gray-900 pb-[8px] max-sm:text-[18px]'>6 Ideas for Team Building and Employee Appreciation for Home Stagers</h3>
                                 <div className='flex items-center readBtn'>
                                     <div className='w-[32px] h-[1px] bg-[#dfa667] mr-[8px] readLine'></div>
                                     <button className='font-bold text-gray-900 read cursor-pointer'>Read more</button>
@@ -80,11 +80,11 @@ const BlogSec = () => {
                         <li>
 
 
-                            <div className="item w-[350px] max-sm:w-[300px] shadow-2xl">
+                            <div className="item w-[350px] max-sm:w-[290px] shadow-2xl">
                             <Image src="/latest-3.webp" width={350} height={370} alt="" />
                             <div className='w-[85%] justify-self-center py-[16px]'>
-                                <h1 className='text-gray-400 serif font-bold text-[16px] py-[8px] uppercase'>Planning</h1>
-                                <h3 className='serif text-2xl font-bold text-gray-900 pb-[8px]'>How to Find the Best Price Structure for Your Home Staging Services</h3>
+                                <h1 className='text-gray-400 serif font-bold text-[16px] max-sm:text-[12px] py-[8px] uppercase'>Planning</h1>
+                                <h3 className='serif text-2xl font-bold text-gray-900 pb-[8px] max-sm:text-[18px]'>How to Find the Best Price Structure for Your Home Staging Services</h3>
                                 <div className='flex items-center readBtn'>
                                     <div className='w-[32px] h-[1px] bg-[#dfa667] mr-[8px] readLine'></div>
                                     <button className='font-bold text-gray-900 read cursor-pointer'>Read more</button>

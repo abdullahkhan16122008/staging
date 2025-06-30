@@ -15,7 +15,7 @@ const page = () => {
         useEffect(() => {
             let timeout = setTimeout(() =>{
                 setLoader(false)
-            }, 3000)}
+            }, 1500)}
           )
     
 
@@ -52,10 +52,10 @@ const page = () => {
         <div className='w-[80%] justify-self-center justify-between content-center flex flex-wrap'>
 
     <div className="my-[16px] block">
-          <h2 className="introSubHead uppercase text-[#dfa667] text-[20px] font-bold">
+          <h2 className="introSubHead uppercase max-sm:text-[18px] text-[#dfa667] text-[20px] font-bold">
             Branding
           </h2>
-          <div className="ardich articleHead py-[12px] text-[42px] articleHead font-medium uppercase">
+          <div className="ardich articleHead py-[12px] text-[42px] max-sm:text-2xl articleHead font-medium uppercase">
             Our Clients
           </div>
 

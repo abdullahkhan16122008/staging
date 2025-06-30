@@ -14,7 +14,7 @@ const Projects = () => {
     useEffect(() => {
         let timeout = setTimeout(() =>{
             setLoader(false)
-        }, 3000)}
+        }, 1500)}
       )
 
   return (

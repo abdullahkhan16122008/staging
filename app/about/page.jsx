@@ -13,7 +13,7 @@ const About = () => {
   useEffect(() => {
     let timeout = setTimeout(() => {
       setLoader(false);
-    }, 3000);
+    }, 1500);
   });
 
   return (
@@ -41,21 +41,21 @@ const About = () => {
       </div>
 
       <main className="py-[128px]">
-        <div className="flex flex-wrap w-[90%] px-[64px] my-[96px] justify-self-center">
+        <div className="flex flex-wrap w-[90%] px-[64px] max-md:px-[25px] my-[96px] justify-self-center">
           <article className="aboutLeft left w-[25vw]">
             <h1 className="text-color text-[18px] pt-[16px]">Who are we</h1>
-            <h1 className="aldrich text-4xl font-bold uppercase py-[16px]">
+            <h1 className="aldrich text-4xl max-sm:text-2xl font-bold uppercase py-[16px] max-sm:py-[6]">
               About Us
             </h1>
-            <p className="text-[16px] text-gray-700">
+            <p className="text-[16px] max-md:text-[14px] text-gray-700">
               As you might expect of a company that began as a high-end
               interiors contractor.
             </p>
           </article>
-          <section className="w-[50%]">
+          <section className="w-[50%] max-xl:w-[90%] max-md:w-full">
             <section className="about">
-              <div className="w-[45vw] mt-[16px] aboutPara text-gray-700">
-                <p>
+              <div className="w-[45vw] max-xl:w-[95%] mt-[16px] aboutPara text-gray-700">
+                <p className="max-md:text-[14px]">
                   Metasurfaces are generally designed by placing scatterers in
                   periodic or pseudo-periodic grids. We propose and discuss
                   design rules for functional metasurfaces with randomly placed.
@@ -75,10 +75,10 @@ const About = () => {
                         height={60}
                         alt="service"
                       />
-                      <h1 className="aldrich text-2xl uppercase py-[16px]">
+                      <h1 className="aldrich text-2xl uppercase max-sm:text-xl py-[16px]">
                         Our Mission
                       </h1>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 max-sm:text-[14px]">
                         As you might expect of a company that began as a
                         high-end interiors contractor, we pay strict attention.
                         Anisotropic elements that randomly sample.
@@ -95,10 +95,10 @@ const About = () => {
                         height={60}
                         alt="service"
                       />
-                      <h1 className="aldrich text-2xl uppercase py-[16px]">
+                      <h1 className="aldrich text-2xl max-sm:text-xl uppercase py-[16px]">
                         Our Vision
                       </h1>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 max-sm:text-[14px]">
                         Our commitment to exceptional quality has never wavered.
                         To day ranks as one of the most highly-regarded
                         construction. Anisotropic elements that randomly

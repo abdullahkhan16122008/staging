@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import BrandSlider from "./BrandSlider";
+import AOS from 'aos'
+ import 'aos/dist/aos.css';
 
 function Service() {
   function SampleNextArrow(props) {
@@ -28,6 +30,10 @@ function Service() {
       />
     );
   }
+
+  useEffect(()=>{
+    AOS.init({once:false})
+  },[])
 
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
@@ -65,10 +71,10 @@ function Service() {
     <div>
       <section className="projects px-[190px] max-xl:px-[32px] py-[64px] my-[32px]">
         <div className="my-[16px]">
-          <h2 className="introSubHead text-[#dfa667] text-[20px] font-bold">
+          <h2 className="introSubHead text-[#dfa667] max-sm:text-[18px] text-[20px] font-bold">
             Our Specialization
           </h2>
-          <div className="ardich articleHead py-[12px] text-[42px] articleHead font-medium uppercase">
+          <div className="ardich articleHead max-sm:text-3xl py-[12px] text-[42px] articleHead font-medium uppercase">
             What we do
           </div>
         </div>

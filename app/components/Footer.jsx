@@ -12,8 +12,8 @@ const Footer = () => {
                     <h2 className='aldrich text-[42px] max-xl:text-[32px] max-md:text-[24px] ml-[5px] inline-block text-white font-bold'>Ready to Work with Us</h2>
                     <div className='w-[35%] max-md:w-[70%] float-right max-xl:float-left max-xl:justify-self-center tab'>
                         <div className='flex'>
-                            <input type="search" name="search" className='w-[75%] max-md:w-[100%] bg-white px-[36px] py-[14px]' placeholder='Enter your Email...' id="search" />
-                            <button className='bg-[#dfa667] py-[12px] px-[18px]'><Image src={'/plane.png'} height={20} width={20} alt='img' /></button>
+                            <input type="search" name="search" className='w-[75%] max-md:w-[500px] max-sm:w-[220px] bg-white px-[36px] py-[14px]' placeholder='Enter your Email...' id="search" />
+                            <button className='bg-[#dfa667] py-[12px] px-[18px]'><img src={'/plane.png'} className='w-[32px] max-sm:w-[20px]' alt='img' /></button>
                         </div>
                     </div>
                 </div>
@@ -22,16 +22,16 @@ const Footer = () => {
                 <hr className='border-gray-500 w-[80%] justify-self-center' />
 
                 <div className="container px-5 py-24 w-[80%] justify-self-center mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap relative max-xl:left-[-18px] flex-col">
-                    <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                    <div className="w-64 max-sm:justify-items-center max-sm:justify-center flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                         <Link href={''} className="flex title-font font-medium items-center md:justify-start justify-center text-white">
                             <span className="text-xl logo text-[42px]">Staging</span>
                         </Link>
-                        <p className="mt-9 text-[16px] relative w-[200px] max-sm:left-[22px] text-gray-400">
+                        <p className="mt-9 text-[16px] relative w-[200px] text-gray-400">
                             7176 Blue Spring Lane
                             Santa Monica, CA 90403
                         </p>
-                        <p className="mt-9 text-[16px] w-[200px] max-sm:left-[22px] text-gray-400">
-                            abdullahkhan16122008@gmail.com
+                        <p className="mt-9 text-[16px] w-[200px] text-gray-400">
+                            abdullahkhan16122008<br/>@gmail.com<br/>
                             +92 3046640361
                         </p>
 
@@ -164,8 +164,8 @@ const Footer = () => {
 
 
                 <div className="bg-light w-[80%] justify-self-center">
-                    <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                        <div className="text-gray-400 text-sm max-md:text-[12px] max-sm:text-[8px] sm:text-left">
+                    <div className="container mx-auto py-4 px-5 max-sm:px-1 flex flex-wrap flex-col sm:flex-row">
+                        <div className="text-gray-400 text-sm max-md:text-[12px] max-sm:text-[13px] sm:text-left">
                         Copyright © 2025 All rights reserved | This template is made with love  by
                             <Link
                                 href={"https://twitter.com/knyttneve"}
@@ -176,7 +176,7 @@ const Footer = () => {
                                 Abdullah Khan
                             </Link>
                         </div>
-                    <div className='inline policy float-right absolute right-[10%] max-sm:text-[12px]'><Link href={'/'} className='text-gray-400'>Terms of use</Link> | <Link href={'/'} className='text-gray-400'>Privacy Policy</Link></div>
+                    <div className='inline policy float-right absolute right-[10%] max-sm:text-[12px] max-sm:my-8'><Link href={'/'} className='text-gray-400'>Terms of use</Link> | <Link href={'/'} className='text-gray-400'>Privacy Policy</Link></div>
                         
                     </div>
                 </div>

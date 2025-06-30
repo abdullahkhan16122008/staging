@@ -13,7 +13,7 @@ const contact = () => {
   useEffect(() => {
     let timeout = setTimeout(() => {
       setLoader(false);
-    }, 3000);
+    }, 1500);
   });
 
   return (
@@ -104,12 +104,12 @@ const contact = () => {
           ></iframe>
         </section>
 
-        <section className="w-[80%] max-xl:text-center justify-self-center my-[128px]">
-          <div className="w-[30%] max-xl:w-[100%]">
+        <section className="w-[80%] text-center justify-self-center my-[128px]">
+          <div className="">
             <div className="introSubHead text-[#dfa667] font-bold">
               FORM
             </div>
-            <div className="aldrich py-[12px] text-[42px] articleHead font-medium">
+            <div className="aldrich py-[12px] max-sm:text-[28px] text-[42px] articleHead font-medium">
               GET IN TOUCH
             </div>
             <p className="py-[9px] text-gray-700">
@@ -118,16 +118,36 @@ const contact = () => {
             </p>
           </div>
 
-          <form action="" method="post" className="w-[50%]">
-            <div className="my-7 flex">
-              <input type="text" name="name" placeholder="Name" id="" className="placeholder:text-gray-400 w-[47%] border-1 border-gray-300 outline-none px-[16px] py-[12px]" />
-              <input type="email" name="email" placeholder="Email" id="" className="placeholder:text-gray-400 ml-9 w-[47%] border-1 border-gray-300 outline-none px-[16px] py-[12px]" />
-            </div>
-            <div>
-              <textarea name="message" id="" placeholder="message" className="resize-none w-[100%] h-[170px] placeholder:text-gray-400 border-1 border-gray-300 outline-none px-[16px] py-[12px]"></textarea>
-            </div>
-            <button className="bg-[#dfa667] text-white px-[32px] text-[18px] py-[12px] my-5 font-bold">Send Message</button>
-          </form>
+          <form action="" method="post" className="w-full max-w-[600px] mx-auto">
+  <div className="my-7 flex flex-col sm:flex-row sm:justify-between gap-4">
+    <input
+      type="text"
+      name="name"
+      placeholder="Name"
+      className="placeholder:text-gray-400 w-full sm:w-[48%] border border-gray-300 outline-none px-[16px] py-[12px]"
+    />
+    <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      className="placeholder:text-gray-400 w-full sm:w-[48%] border border-gray-300 outline-none px-[16px] py-[12px]"
+    />
+  </div>
+  <div>
+    <textarea
+      name="message"
+      placeholder="Message"
+      className="resize-none w-full h-[170px] placeholder:text-gray-400 border border-gray-300 outline-none px-[16px] py-[12px]"
+    ></textarea>
+  </div>
+  <div className="text-center">
+    <button
+      className="bg-[#dfa667] text-white px-[32px] text-[18px] py-[12px] my-5 font-bold"
+    >
+      Send Message
+    </button>
+  </div>
+</form>
 
 
         </section>

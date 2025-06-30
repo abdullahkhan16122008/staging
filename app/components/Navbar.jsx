@@ -99,10 +99,10 @@ const Navbar = () => {
         </div>
       </button>
 
-      <nav className='fixed navigation just w-[50%] top-[0%] max-md:w-[50%] overflow-hidden bottom-[0%] transition-all duration-300 z-777 left-[-32%] xl:hidden max-xl:block bg-light' style={{left: navOpen ? '0%' : '-50%',}} ref={navRef}>
+      <nav className='fixed navigation just w-[50%] max-sm:w-[90%] top-[0%] max-md:w-[50%] overflow-hidden bottom-[0%] transition-all duration-300 z-777 left-[-100%] xl:hidden max-xl:block bg-light' style={{left: navOpen ? '0%' : '-100%',}} ref={navRef}>
       <button className="absolute right-10 top-5 burger group xl:hidden" ref={burgerRef} onClick={() => {
     if (navRef.current) {
-      let a = navRef.current.style.left = '-50%';
+      let a = navRef.current.style.left = '-100%';
     }
   }}>
         <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
@@ -118,10 +118,10 @@ const Navbar = () => {
         <button className='flex font-bold px-[16px] text-[18px] menu rounded-xl absolute top-3 right-2 text-white items-center bg-back' ref={menuRef} onClick={() => {
     if (sideBarRef.current) {
     const currentHeight = sideBarRef.current.style.height;
-    if (currentHeight === '520px') {
+    if (currentHeight === '420px') {
       sideBarRef.current.style.height = '60px';
     } else {
-      sideBarRef.current.style.height = '520px';
+      sideBarRef.current.style.height = '420px';
     }
   }
   }}>Menu
@@ -137,17 +137,11 @@ const Navbar = () => {
           <li className='hover:bg-gray-300 my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><Link href={'/'} onClick={loader => setLoader(true)} className='hoverLink w-[100%] hover:text-black' >Home</Link></li>
           <li className='hover:bg-gray-300 my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><Link href={'/projects'} onClick={loader => setLoader(true)} className='hoverLink w-[100%] hover:text-black' >Projects</Link></li>
           <li className='hover:bg-gray-300 my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><Link href={'/about'} onClick={loader => setLoader(true)} className='hoverLink w-[100%] hover:text-black' >About</Link></li>
-          <li className='hover:bg-gray-300 pages my-1 px-[12px] py-[4px] relative rounded-sm hover:text-black linkHover'><div className='w-[100%] pages overflow-hidden sideNavBar' style={{height: '210px'}} ><button className='hoverLink pages relative text-left hover:text-black'>Pages</button>
-            <div className='mt-2 relative left-2 flex flex-col'>
-            <Link href={'/'} className='hoverLink my-1 px-[12px] py-[4px] rounded-sm'>Project Details</Link>
-            <Link href={'/about'} onClick={loader => setLoader(true)} className='hoverLink my-1 px-[12px] py-[4px] rounded-sm'>About</Link>
-            <Link href={'/services'} onClick={loader => setLoader(true)} className='hoverLink my-1 px-[12px] py-[4px] rounded-sm'>Services</Link>
-            <Link href={'/blogdetails'} onClick={loader => setLoader(true)} className='hoverLink my-1 px-[12px] py-[4px] rounded-sm'>Blog Details</Link>
-            </div>
-            </div>
-            </li>
+          <li className='hover:bg-gray-300 my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><Link href={'/'} onClick={loader => setLoader(true)} className='hoverLink w-[100%] hover:text-black' >Project Details</Link></li>
+          <li className='hover:bg-gray-300 my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><Link href={'/services'} onClick={loader => setLoader(true)} className='hoverLink w-[100%] hover:text-black' >Services</Link></li>
+          <li className='hover:bg-gray-300 my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><Link href={'/blogdetails'} onClick={loader => setLoader(true)} className='hoverLink w-[100%] hover:text-black' >Blog Details</Link></li>
           <li className='hover:bg-gray-300 my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><Link href={'/blog'} onClick={loader => setLoader(true)} className='hoverLink w-[100%] hover:text-black' >Blog</Link></li>
-          <li className='hover:bg-gray-300 my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><Link href={'/'} onClick={loader => setLoader(true)} className='hoverLink w-[100%] hover:text-black' >Contact</Link></li>
+          <li className='hover:bg-gray-300 my-1 px-[12px] py-[4px] rounded-sm hover:text-black linkHover'><Link href={'/contact'} onClick={loader => setLoader(true)} className='hoverLink w-[100%] hover:text-black' >Contact</Link></li>
         </ul>
 
       </div>

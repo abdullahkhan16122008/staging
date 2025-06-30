@@ -78,6 +78,11 @@
   height: 520px;
   width: 350px;
 }
+@media (max-width:600px) {
+  .imgWidth{
+    height: 350px;
+  }
+}
 
 .slick-slider {
   justify-content: space-evenly;
@@ -258,9 +263,6 @@
   }
 }
 @media (max-width: 1280px) {
-  .aboutPara{
-    width: 90vw;
-  }
   .aboutLeft{
     width: 90vw;
     justify-self: center;

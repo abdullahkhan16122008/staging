@@ -81,16 +81,16 @@ const Projects = () => {
   return (
     <div>
 
-      <section className="projects justify-center content-center text-center px-[24px] max-sm:px-[5px]">
-        <h2 className="introSubHead text-[#dfa667] font-bold">WHO ARE WE</h2>
-        <div className='ardich articleHead py-[12px] text-[42px] articleHead font-medium uppercase'>Latest Projects</div>
+      <section className="projects justify-center content-center text-center px-[24px] max-sm:px-[0px]">
+        <h2 className="introSubHead text-[#dfa667] font-bold max-sm:px-[5px]">WHO ARE WE</h2>
+        <div className='ardich articleHead py-[12px] text-[42px] max-sm:text-[35px] articleHead max-sm:px-[5px] max-sm:leading-[30px] font-medium uppercase'>Latest Projects</div>
         
-        <div className="projectSlider w-[100%] px-[16px] h-[50%] overflow-hidden py-[16px]">
+        <div className="projectSlider w-[100%] px-[16px] max-sm:-px-[2px] h-[50%] overflow-hidden py-[16px]">
 
           <div className="slider mx-[16px] max-sm:mx-[0px] justify-evenly">
 
-            <button className="next text-5xl px-[12px] py-[9px] mr-[77px] max-sm:mr-[40px] absolute bg-white cursor-pointer translate-y-[250px] right-[0%] z-3 font-bold">&rarr;</button>
-            <button className="prev text-5xl px-[12px] py-[9px] ml-[77px] max-sm:ml-[40px] absolute bg-white cursor-pointer translate-y-[250px] left-[0%] z-3 font-bold">&larr;</button>
+            <button className="next text-5xl max-sm:scale-[0.70] px-[12px] py-[9px] mr-[77px] max-sm:mr-[30px] absolute bg-white cursor-pointer translate-y-[250px] max-sm:translate-y-[150px] right-[0%] z-3 font-bold">&rarr;</button>
+            <button className="prev text-5xl px-[12px] max-sm:scale-[0.70] py-[9px] ml-[77px] max-sm:ml-[30px] absolute bg-white cursor-pointer translate-y-[250px] max-sm:translate-y-[150px] left-[0%] z-3 font-bold">&larr;</button>
 
 
           <Slider {...settings}>

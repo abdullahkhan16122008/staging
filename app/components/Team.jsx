@@ -23,7 +23,7 @@ const Team = () => {
           <div className='ardich articleHead py-[12px] text-[42px] articleHead max-md:text-[27px] max-sm:right-[0%] font-medium uppercase'>Meat Our Team</div>
         </div>
 
-        <button className='text-black heroBtn py-[12px] mt-[24px] max-xl:my-[32px] px-[18px] font-bold text-[20px] float-right max-xl:float-start rounded'>
+        <button className='text-black heroBtn py-[12px] mt-[24px] max-xl:my-[32px] px-[18px] font-bold text-[20px] max-sm:mt-[0px] float-right max-xl:float-start rounded'>
 
           <div className='relative top-[-10px]'>
 
